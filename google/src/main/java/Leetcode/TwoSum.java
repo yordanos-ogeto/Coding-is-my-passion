@@ -1,9 +1,13 @@
+package Leetcode;
+
 import java.util.*;
 
 public class TwoSum {
     public static void main(String[] args) {
         int[] arr = {2,7,11,15};
         System.out.println(Arrays.toString(twoSum(arr,9)));
+        int i = 123;
+        System.out.println(i%10+"**********");
     }
 
 
@@ -23,4 +27,3 @@ public class TwoSum {
         return newArr;
     }
 }
-        Coding-is-my-passion
