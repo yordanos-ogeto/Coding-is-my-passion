@@ -9,8 +9,5 @@
         <module name="google" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="google" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>
