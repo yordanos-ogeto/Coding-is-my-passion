@@ -1,6 +1,7 @@
 public class BestTimeBuyAndSell {
     public static void main(String[] args) {
-        System.out.print(maxProfit(new int[]{7,1,5,3,6,4}));
+        System.out.println(maxProfit(new int[]{7,1,5,3,6,4}));
+        System.out.print(maxProfit2(new int[]{7,1,5,3,6,4}));
 
     }
     public static int maxProfit(int[] prices){
@@ -14,5 +15,17 @@ public class BestTimeBuyAndSell {
             }
         }
         return max_profit;
+    }
+
+
+    public static int maxProfit2(int[] prices){
+        int current_min=prices[0];
+        int profit = 0;
+        for (int i :prices) {
+            current_min =Math.min(current_min,i);
+            profit=Math.max(profit,i-current_min);
+
+        }
+        return profit;
     }
 }
